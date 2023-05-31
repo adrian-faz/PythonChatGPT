@@ -6,4 +6,4 @@ services:
     container_name: chatgpt-container
     image: chatgpt-image
     ports:
-      - "3000:3000"
+      - "5000:5000"
