@@ -24,7 +24,9 @@ def getChatResponse():
     model_response = get_chatgpt_response(messages)
     return {"response": model_response}
 
-
+@app.route('/', methods=['GET'])
+def getResponse():
+    return {"salud"}
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port='5000', debug=True) #Con el True en debug se reinicia cuando hay cambios
